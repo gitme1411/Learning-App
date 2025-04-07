@@ -1,0 +1,37 @@
+diff --git a/node_modules/react-native-circular-progress-indicator/src/circularProgress/index.tsx b/node_modules/react-native-circular-progress-indicator/src/circularProgress/index.tsx
+index 68654d7..561a648 100644
+--- a/node_modules/react-native-circular-progress-indicator/src/circularProgress/index.tsx
++++ b/node_modules/react-native-circular-progress-indicator/src/circularProgress/index.tsx
+@@ -140,6 +140,15 @@ const CircularProgress = forwardRef<ProgressRef, CircularProgressProps>(
+             StyleSheet.absoluteFillObject,
+             styles(styleProps).valueContainer,
+           ]}>
++            {title && title !== '' ? (
++            <Text
++              testID="progress-title-text"
++              style={[styles(styleProps).title, titleStyle]}
++              numberOfLines={1}
++              allowFontScaling={allowFontScaling}>
++              {title}
++            </Text>
++          ) : null}
+           {showProgressValue && (
+             <View style={styles(styleProps).valueContainerRow}>
+               {!!valuePrefix && (
+@@ -181,15 +190,7 @@ const CircularProgress = forwardRef<ProgressRef, CircularProgressProps>(
+               )}
+             </View>
+           )}
+-          {title && title !== '' ? (
+-            <Text
+-              testID="progress-title-text"
+-              style={[styles(styleProps).title, titleStyle]}
+-              numberOfLines={1}
+-              allowFontScaling={allowFontScaling}>
+-              {title}
+-            </Text>
+-          ) : null}
++          
+           {subtitle && subtitle !== '' ? (
+             <Text
+               testID="progress-subtitle-text"

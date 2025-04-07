@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">localhost</domain>
+        <domain includeSubdomains="false">10.0.2.2</domain>
+        <domain includeSubdomains="false">10.0.3.2</domain>
+        <domain includeSubdomains="true">jamesedutech.xyz</domain>
+         <domain includeSubdomains="true">jamesedutech.net</domain>
+    </domain-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="@raw/certificate" />
+             <certificates src="@raw/certificate2" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

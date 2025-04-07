@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "521405756938",
+    "project_id": "jamesedutech-dev",
+    "storage_bucket": "jamesedutech-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521405756938:android:80fb9b25ef93e170c451f3",
+        "android_client_info": {
+          "package_name": "com.aucitizenshiptest2024"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlD-Ub4Oo-lNhn8coNo3ZfNXMwLzDVLMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
